@@ -156,8 +156,8 @@ export default {
         password: this.password,
         confirm: this.confirmation
       })
-      .then(success => {
-        console.log(success)
+      .then(() => {
+        this.$router.push({ name: 'login-page' })
       })
       .catch(err => {
         console.log(err)
