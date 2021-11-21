@@ -158,11 +158,9 @@ export default {
       })
       .then(success => {
         console.log(success)
-        alert('success')
       })
       .catch(err => {
         console.log(err)
-        alert('error')
       })
     }
   }

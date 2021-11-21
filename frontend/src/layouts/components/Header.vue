@@ -7,27 +7,27 @@
         </h3>
       </div>
       <div class="d-flex justify-content-center">
-        <div class="p-2">
+        <div class="px-3">
           <router-link :to = "{ name:'home-page' }">
             Beranda
           </router-link>
         </div>
-        <div class="p-2">
+        <div class="px-3">
           <router-link :to = "{ name:'book-page' }">
             Penyewaan
           </router-link>
         </div>
-        <div class="p-2">
+        <div class="px-3">
           <router-link :to = "{ name:'court-page' }">
             Ketersediaan Lapangan
           </router-link>
         </div>
-        <div class="p-2">
+        <div class="px-3">
           <router-link :to = "{ name:'facility-page' }">
             Fasilitas
           </router-link>
         </div>
-        <div class="p-2">
+        <div class="px-3">
           <router-link :to = "{ name:'event-page' }">
             Event
           </router-link>
