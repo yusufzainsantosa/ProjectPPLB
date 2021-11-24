@@ -1,20 +1,20 @@
 <template>
   <div id="main-container">
     <Header />
-    <div class="container">
+    <div class="page-container">
       <router-view />      
     </div>
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
 <script>
-// import Footer from '@/layouts/components/Footer.vue'
+import Footer from '@/layouts/components/Footer.vue'
 import Header from '@/layouts/components/Header.vue'
 
 export default {
   components: {
-    // Footer,
+    Footer,
     Header
   }
 }
@@ -24,8 +24,10 @@ export default {
 #main-container > div {
   min-width: 600px;
 }
-.container {
-  min-height: calc(100vh - 100px);
-  max-width: 100vw;
+.page-container {
+  min-height: calc(100vh - 120px);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
 }
 </style>

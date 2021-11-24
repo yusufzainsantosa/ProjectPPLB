@@ -6,28 +6,53 @@
           BeSmart
         </h3>
       </div>
-      <div class="d-flex justify-content-center">
-        <div class="px-3">
+      <div class="d-flex justify-content-center h-100">
+        <div
+          class="px-3 d-flex align-items-center"
+          :class="{
+            'clicked': ($route.name === 'home-page')
+          }"
+        >
           <router-link :to = "{ name:'home-page' }">
             Beranda
           </router-link>
         </div>
-        <div class="px-3">
+        <div
+          class="px-3 d-flex align-items-center"
+          :class="{
+            'clicked': ($route.name === 'book-page')
+          }"
+        >
           <router-link :to = "{ name:'book-page' }">
             Penyewaan
           </router-link>
         </div>
-        <div class="px-3">
+        <div
+          class="px-3 d-flex align-items-center"
+          :class="{
+            'clicked': ($route.name === 'court-page')
+          }"
+        >
           <router-link :to = "{ name:'court-page' }">
             Ketersediaan Lapangan
           </router-link>
         </div>
-        <div class="px-3">
+        <div
+          class="px-3 d-flex align-items-center"
+          :class="{
+            'clicked': ($route.name === 'facility-page')
+          }"
+        >
           <router-link :to = "{ name:'facility-page' }">
             Fasilitas
           </router-link>
         </div>
-        <div class="px-3">
+        <div
+          class="px-3 d-flex align-items-center"
+          :class="{
+            'clicked': ($route.name === 'event-page')
+          }"
+        >
           <router-link :to = "{ name:'event-page' }">
             Event
           </router-link>
@@ -103,6 +128,11 @@ nav {
       font-weight: bold;
       text-decoration: none;
     }
+  }
+
+  .clicked {
+    border-bottom: 10px solid #FAE588;
+    padding-top: 10px;
   }
 }
 </style>

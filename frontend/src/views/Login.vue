@@ -1,5 +1,5 @@
 <template>
-  <div class="login-form">
+  <div class="login-form pt-3">
     <div
       v-if="wrongCred"
       class="alert alert-warning alert-dismissible fade show my-2"
@@ -15,7 +15,7 @@
     </div>
     <form
       @submit.prevent="loginUser"
-      class="my-3 mx-auto"
+      class="mx-auto"
     >
       <div class="mb-3">
         <label

@@ -1,9 +1,9 @@
 <template>
-  <div class="register-form">    
+  <div class="register-form pt-3">    
     <ValidationObserver v-slot="{ handleSubmit }">
       <form
         @submit.prevent="handleSubmit(registerUser)"
-        class="my-3 mx-auto"
+        class="mx-auto"
       >
         <div class="mb-3">
           <ValidationProvider
