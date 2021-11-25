@@ -71,7 +71,7 @@
       </h5>
       <div class="d-flex justify-content-center">
         <l-map
-          style="height: 350px; width: 700px;"
+          class="map-location"
           :zoom="zoom"
           :center="center"
         >
@@ -156,6 +156,13 @@ export default {
         min-width: 440px;
         max-width: 600px;
       }
+    }
+  }
+  .third-part {
+    .map-location {
+      height: 350px;
+      max-width: 1000px;
+      min-width: 500px
     }
   }
 }

@@ -21,8 +21,8 @@ export default {
 </script>
 
 <style lang="scss">
-#main-container > div {
-  min-width: 600px;
+#main-container {
+  min-width: 1200px;
 }
 .page-container {
   min-height: calc(100vh - 120px);

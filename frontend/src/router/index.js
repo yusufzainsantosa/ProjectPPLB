@@ -33,10 +33,10 @@ const routes = [
       {
         path: '/book',
         name: 'book-page',
-        component: () => import('@/views/Penyewaan.vue'),
-        meta: {
-          requiresAuth: true
-        }
+        component: () => import('@/views/Penyewaan.vue')
+        // meta: {
+        //   requiresAuth: true
+        // }
       },
       {
         path: '/login',
